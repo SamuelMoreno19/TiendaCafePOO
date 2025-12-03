@@ -25,8 +25,19 @@ public class TiendaCafe {
         System.out.println("\n--- Actualizando Cantidad ---");
         cafe1.actualizarCantidad(40.0f);
 
+        // NUEVO: PRUEBA DEL MÉTODO aplicarDescuento()
+        // =============================================
+        System.out.println("\n--- Aplicando Descuentos ---");
+        System.out.println("Aplicando 15% de descuento al Cafe de Antioquia:");
+        cafe2.aplicarDescuento(15);
+
+        System.out.println("\nAplicando 10% de descuento al Cafe del Eje Cafetero:");
+        cafe3.aplicarDescuento(10);
+
         // Mostrar información actualizada
         System.out.println("\n--- Informacion Actualizada ---");
         cafe1.mostrarInformacion();
+        cafe2.mostrarInformacion();
+        cafe3.mostrarInformacion();
     }
 }
